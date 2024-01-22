@@ -13,7 +13,7 @@ local modules = neorg.modules
 local module = modules.create("core.integrations.zen_mode")
 
 module.setup = function()
-    local success, zen_mode = pcall(require, "zen_mode")
+    local success, zen_mode = pcall(require, "zen-mode")
 
     if not success then
         return { success = false }
